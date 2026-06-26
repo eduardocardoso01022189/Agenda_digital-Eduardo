@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINHA PITON DE ESTUDOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside>
+
+        <h2>🐍 Minha PITON</h2>
+
+        <nav>
+
+            <a onclick="mostrarTela('inicio')">
+                🏠 Início
+            </a>
+
+            <a onclick="mostrarTela('tarefas')">
+                📚 Tarefas
+            </a>
+
+            <a onclick="mostrarTela('config')">
+                ⚙ Configuração
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <section class="conteudo">
+
+        <!-- INÍCIO -->
+
+        <div id="inicio" style="display:none;">
+
+            <div class="container">
+
+                <h1>🚀 Minha Agenda Digital PITON</h1>
+
+                <h2>Organize seus estudos de forma inteligente</h2>
+
+                <p>
+                    Este aplicativo foi desenvolvido utilizando HTML, CSS e JavaScript.
+                    O objetivo é criar uma ferramenta simples para cadastrar,
+                    acompanhar e organizar tarefas e matérias escolares.
+                </p>
+
+                <p>
+                    A plataforma permite registrar atividades, acompanhar o progresso
+                    dos estudos e manter uma rotina organizada durante todo o ano letivo.
+                </p>
+
+                <p>
+                    O sistema foi construído seguindo o modelo Dashboard, permitindo
+                    uma navegação rápida e intuitiva entre as funcionalidades.
+                </p>
+
+                <p>
+                    Através da área de tarefas o estudante pode adicionar atividades,
+                    visualizar a quantidade total cadastrada e marcar conteúdos já
+                    concluídos.
+                </p>
+
+                <ul>
+
+                    <li>✔ Cadastro de tarefas</li>
+
+                    <li>✔ Interface Dashboard</li>
+
+                    <li>✔ Tema claro e escuro</li>
+
+                    <li>✔ Contador automático</li>
+
+                    <li>✔ Marcação de tarefas concluídas</li>
+
+                    <li>✔ Organização de matérias</li>
+
+                    <li>✔ Navegação por menu lateral</li>
+
+                </ul>
+
+                <br>
+
+                <a href="https://developer.mozilla.org/pt-BR/" target="_blank">
+                    🌐 Aprender mais sobre desenvolvimento Web
+                </a>
+
+                <br><br>
+
+                <img
+                src="https://cdn-icons-png.flaticon.com/512/6062/6062646.png"
+                alt="Programação Web"
+                width="200">
+
+            </div>
+
+        </div>
+
+        <!-- TAREFAS -->
+
+        <div id="tarefas" style="display:none;">
+
+            <div class="container">
+
+                <h1>👀✔😜🥵 MEU PLANO DE ESTUDOS</h1>
+
+                <p>Meu primeiro PITON aplicativo web</p>
+
+                <p>
+                    Total de tarefas:
+                    <span id="contador">0</span>
+                </p>
+
+                <input
+                    id="inputTarefa"
+                    type="text"
+                    placeholder="Digite uma tarefa">
+
+                <button onclick="adicionarTarefa()">
+                    🚀 Adicionar tarefa
+                </button>
+
+                <h2>Minhas tarefas:</h2>
+
+                <ul id="listaTarefas"></ul>
+
+            </div>
+
+        </div>
+
+        <!-- CONFIGURAÇÃO -->
+
+        <div id="config" style="display:none;">
+
+            <div class="container">
+
+                <h1>⚙ Configuração</h1>
+
+                <p>Usuário: Eduardo Preisler Cardoso</p>
+
+                <p>Ano: 2026</p>
+
+                <label>Tema:</label>
+
+                <br><br>
+
+                <select id="tema" onchange="alterarTema()">
+
+                    <option value="claro">
+                        ☀️ Claro
+                    </option>
+
+                    <option value="escuro">
+                        🌙 Escuro
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    2026 - DESENVOLVIDO POR: EDUARDO PREISLER CARDOSO
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

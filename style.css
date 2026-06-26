@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://pbs.twimg.com/media/FsGWag4X0AEQIhl?format=jpg&name=small);
+    margin: 0;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+aside {
+    width: 250px;
+    background-color: rgb(97, 73, 202);
+    padding: 30px 20px;
+}
+
+aside h2 {
+    color: white;
+    text-align: center;
+}
+
+aside nav {
+    display: flex;
+    flex-direction: column;
+}
+
+aside nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+aside nav a:hover {
+    color: aqua;
+}
+
+.conteudo {
+    flex: 1;
+    padding: 40px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background: rgb(198, 53, 235);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.container h1 {
+    color: white;
+}
+
+.container img {
+    max-width: 100%;
+}
+
+.container a {
+    color: aqua;
+    font-weight: bold;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    background-color: aqua;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+li {
+    text-align: left;
+    margin: 10px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: black;
+    padding: 15px;
+}
+
+/* Modo escuro */
+
+.dark-mode {
+    background-image: none;
+    background-color: #1a1a1a;
+}
+
+.dark-mode .container {
+    background: #2d2d2d;
+    color: white;
+}
+
+.dark-mode aside {
+    background-color: #111827;
+}
+
+.dark-mode footer {
+    background-color: #000;
+    color: white;
+}
+
+.dark-mode input {
+    background-color: #444;
+    color: white;
+}
+
+.dark-mode button {
+    background-color: #2563eb;
+}
